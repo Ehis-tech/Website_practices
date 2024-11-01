@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="animation,ogunstate reveal,">
+    <link rel="stylesheet" href="css/animation.css">
+    <!--link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css"-->
+    <script src="https://kit.fontawesome.com/0afba3624a.js" crossorigin="anonymous"></script>
+    <title> Text Reveal Animation</title>
+</head>
+<style>
+
+    :root { --animate-speed: 2.04s; }
+
+
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    background: #f1ff36;
+}
+
+/* h1 {
+    text-transform:uppercase;
+    font-size: 25px;
+    color:  black;
+    padding: 0px 20px;
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+    text-align: center;
+}
+
+h1:before {
+    content: '';
+    width: 0%;
+    height: 58px;
+    background:rgba(255,242,0,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animate forwards ease-in 2s;
+} 
+
+h2 {
+    text-transform:uppercase;
+    font-size: 25px;
+    color:  black;
+    padding: 0px 20px;
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+    text-align: center;
+}
+
+h2:before {
+    content: '';
+    width: 0%;
+    height: 58px;
+    background:rgba(255,242,0,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animate forwards ease-in 3s;
+} 
+@keyframes animate {
+   0% { width: 100%;
+         z-index: 1; }
+
+     50% { width: 0%;
+            z-index: 1; }
+ 
+ } */
+
+ .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px,-50px);
+    font-family: verdana;
+ }
+
+ a {
+    position:relative;
+    text-decoration: none;
+    width: 100px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 24px;
+    color: #262626;   
+ }
+
+ a:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    width: 0%;
+    height: 0%;
+    background:transparent;
+    border: 2px solid transparent;
+ }
+
+ a:hover:before {
+    animation: animate 1s linear forwards;
+ }
+
+ @keyframes animate {
+    0% {width: 0;
+        height: 0;
+        border-top-color: #262626;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent; }
+
+        50% {width: 100%;
+        height: 0;
+        border-top-color: #262626;
+        border-right-color: #262626;
+        border-bottom-color: transparent;
+        border-left-color: transparent; }
+
+
+        100% {width:100%;
+        height: 100%;
+        border-top-color: #262626;
+        border-right-color: #262626;
+        border-bottom-color: transparent;
+        border-left-color: transparent; }
+ }
+
+
+
+ 
+ a:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    width: 0%;
+    height: 0%;
+    background:transparent;
+    border: 2px solid transparent;
+ }
+
+ a:hover:after {
+    animation: animate2 1s linear forwards;
+  /*  animation-delay: 1s; */
+ }
+
+ @keyframes animate2 {
+    0% {width: 0;
+        height: 0;
+        border-top-color:transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color:  #262626; }
+
+        50% {width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color:  #262626;
+        border-left-color:  #262626; }
+
+
+        100% {width:100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color:  #262626;
+        border-left-color:  #262626; }
+ }
+
+
+
+</style>
+<body>
+  
+  <!-- <div class="start"><h1> WELCOME</h1> </div>
+   <div class="stop"> <h2> TO OUR WEBSITE</h2> </div>  -->
+
+   <div class="center"><a href="#">CLICK</a></div>
+    
+</body>
+</html>
